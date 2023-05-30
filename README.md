@@ -24,7 +24,7 @@ make clean
 ```
 
 # Python Interopt
-Since Python was built off the back of C, made sense to shoot myself in the foot and try to make a Python binding for this library.
+Since Python was built off the back of C, made sense to shoot myself in the foot and try to make a Python bindingish for this library.
 ```bash
 python3 main.py
 ```
