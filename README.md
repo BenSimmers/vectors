@@ -15,7 +15,7 @@ Run the makefile to compile the library
 make
 # not running make will only recompile the modified lines
 ```
-**Note:** The makefile will compile the lib to a `.so` file since it was compiled on a Mac. if on Windows, change the the makefile to compile to a `.dll` file, or just compile it manually 💀 or search google for an answer. 
+**Note:** The makefile will compile the lib to a `.so` file since it was compiled on a Mac. if on Windows, change the the makefile to compile to a `.dll` file, or just compile it manually 💀 or search google for an answer 🫠.
 
 If you wanna clear all compiled files
 ```bash
