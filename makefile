@@ -19,6 +19,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -pthread
 LIBRARY = libvector.so 
+# LIBRARYWINDOWS = libvector.dll
 PROGRAM = program
 
 all: $(PROGRAM)

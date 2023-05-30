@@ -1,8 +1,6 @@
 import ctypes
 import threading
 
-# Define the C data structures
-
 class Vector(ctypes.Structure):
     _fields_ = [
         ('data', ctypes.POINTER(ctypes.c_char_p)),
@@ -17,11 +15,7 @@ class VectorDatabase(ctypes.Structure):
         ('capacity', ctypes.c_int)
     ]
 
-# Load the shared library
-
 libvector = ctypes.CDLL('./libvector.so')
-
-# Declare the function prototypes
 
 # Initialize Vector
 libvector.vector_init.argtypes = [ctypes.POINTER(Vector), ctypes.c_int]
@@ -77,7 +71,6 @@ libvector.vector_db_init(ctypes.byref(db), 4)
 libvector.vector_db_load(ctypes.byref(db), b"db.txt")
 libvector.vector_db_print(ctypes.byref(db))
 
-# Menu and user input loop
 choice = 0
 while choice != 5:
     print("\nVector Database in C :D\n")
